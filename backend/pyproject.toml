@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "provider_catalog_backend"
+version = "0.1.0"
+description = "FastAPI backend for procurement provider catalog"
+authors = [{name = "Provider Catalog", email = "dev@example.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.24",
+    "sqlalchemy[asyncio]>=2.0",
+    "alembic>=1.12",
+    "pydantic>=2.5",
+    "pandas>=2.1",
+    "openpyxl>=3.1",
+    "python-dotenv>=1.0",
+    "psycopg[binary,pool]>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "httpx>=0.25",
+]
+
+[tool.setuptools.packages.find]
+where = ["app"]
