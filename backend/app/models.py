@@ -69,7 +69,7 @@ class Category(Base):
     description: Mapped[str | None] = mapped_column(Text())
     parent_id: Mapped[uuid.UUID | None] = mapped_column(ForeignKey("categories.id"))
 
-    parent: Mapped["Category" | None] = relationship(remote_side="Category.id")
+    parent: Mapped[Category | None] = relationship(remote_side="Category.id")
     products: Mapped[list["ProductCategory"]] = relationship(back_populates="category")
 
     __table_args__ = (UniqueConstraint("name", "parent_id", name="uq_categories_name_parent"),)
