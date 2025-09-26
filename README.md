@@ -2,6 +2,8 @@
 
 A lean procurement catalog that ingests NASPO-style Excel listings, stores normalized data in PostgreSQL, and exposes a minimal FastAPI + React experience for high-speed search, filtering, and price comparison.
 
+NOTE: DEVELOPMENTAL ONLY, REQUIRES FURTHER SECURITY PRACTISES BEFORE PRODUCTION
+
 ## Features
 
 - PostgreSQL schema covering providers, brands, categories, products, provider listings, optional attributes, images, and inventory fields.
