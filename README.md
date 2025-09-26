@@ -2,7 +2,12 @@
 
 A lean procurement catalog that ingests NASPO-style Excel listings, stores normalized data in PostgreSQL, and exposes a minimal FastAPI + React experience for high-speed search, filtering, and price comparison.
 
-NOTE: DEVELOPMENTAL ONLY, REQUIRES FURTHER SECURITY PRACTISES BEFORE PRODUCTION
+NOTE: DEVELOPMENTAL ONLY, REQUIRES FURTHER SECURITY PRACTISES BEFORE PRODUCTION: 
+- Changing default database credentials
+- Adding proper authentication
+- Securing database access
+- Implementing rate limiting
+- Adding input validation
 
 ## Features
 
